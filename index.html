@@ -210,7 +210,9 @@ li.done .stxt{color:var(--muted);text-decoration:line-through;text-decoration-co
 :root{--void:#0a0b0c;--canvas:#17181b;--edge:#2c2f33;--smoke:#a3a7ae;--snow:#f2f3f1;--signal:#e5261e;
   --display:"Alexandria","IBM Plex Sans Arabic",system-ui,sans-serif;--mono:"Geist Mono",ui-monospace,monospace}
 .glow{display:none}
-h1{font-weight:600;letter-spacing:-.02em}
+/* Alexandria's long descenders (ي) need room under the title */
+h1{font-weight:600;letter-spacing:-.02em;line-height:1.3;padding-bottom:.5em}
+.sub{margin-top:0}
 h1::after{content:".";color:var(--signal)}
 .num,.sub,.it .mt span{font-variant-numeric:tabular-nums}
 .bgfx{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
