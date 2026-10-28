@@ -6,6 +6,10 @@
 An Arabic (RTL) dashboard that shows the status of all your projects in one place, in plain language.
 One static page, no build step, no server, no account.
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/navcoaching/projects-dashboard)
+
+تجربة مباشرة: https://projects-dashboard-ar.netlify.app
+
 ## المزايا
 - دوّارة بطاقات ثلاثية الأبعاد بألوان متحركة. الرقم الكبير = كم يوم مرّ على آخر فحص أمان.
 - تضغط البطاقة فتطير جنب شرح بسيط: هل الموقع شغال، آخر تحديث، الأمان، وش الموضوع، وش المطلوب منك.
@@ -47,6 +51,11 @@ python3 -m http.server 8000
 | `history` | السجل: `{ "date" أو "daysAgo", "kind": "security|update|issue|fix", "text" }` |
 
 كل النصوص تُعرض كنص عادي، فما يمكن لملف مستورد يشغّل كود في الصفحة.
+
+## خلّه لك
+1. اضغط زر **Deploy to Netlify** فوق، أو اعمل **Fork** للمستودع.
+2. عدّل `demo.json` في نسختك وحط مشاريعك بنفس الشكل، فتظهر في كل أجهزتك.
+3. أو افتح موقعك واضغط «استيراد بياناتي» لملف يبقى في متصفحك بس.
 
 ## النشر على Netlify
 المجلد جاهز كما هو: `netlify.toml` ينشر الجذر ويضيف ترويسات أمان.
